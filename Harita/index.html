@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fatih Das İbe Final Ödevi</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/litera/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Gr51humlTz50RfCwdBYgT+XvbSZqkm8Loa5nWlNrvUqCinoe6C6WUZKHS2WIRx5o"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center pt-5">
+            Türkiye İller ve Bölgeler
+          </h1>
+          <h5 class="text-center pb-5">Fatih Daş - 161220043</h5>
+          <br />
+          <div class="button-filter">
+            <a class="bolge" href="#"><button class="btn btn-primary">Akdeniz</button></a>
+            <a class="bolge" href="#"><button class="btn btn-danger">Doğu Anadolu</button></a>
+            <a class="bolge" href="#"><button class="btn btn-info">Ege</button></a>
+            <a class="bolge" href="#"><button
+                style="color: white; background-color: #ebaa41;"
+                class="btn"
+              >Güneydoğu Anadolu</button></a>
+            <a class="bolge" href="#"><button class="btn btn-success">Karadeniz</button></a>
+            <a class="bolge" href="#"><button
+                style="color: white; background-color: #8f9191;"
+                class="btn"
+              >Marmara</button></a>
+            <a class="bolge" href="#"><button
+                style="color: white; background-color: #f1c40f;"
+                class="btn"
+              >İç Anadolu</button></a>
+            <button type="button" name="button" class="all btn btn-dark">
+              Temizle
+            </button>
+          </div>
+          <br />
+          <table id="data-table" class="table table-bordered table-responsive">
+            <thead>
+              <tr>
+                <th>İl</th>
+                <th>Plaka Kodu</th>
+                <th>Alan Kodu</th>
+                <th>Nüfus</th>
+                <th>Bölge</th>
+                <th>Yüzölçümü</th>
+                <th>Erkek Nüfus</th>
+                <th>Kadın Nüfus</th>
+                <th>Nüfus Yüzdesi</th>
+                <th>İlçe Sayısı</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="city-details">
+      <div class="city-details-close">
+        <img src="close.png" alt="" />
+      </div>
+      <h3 class="text-center pt-5" id="il_adi"></h3>
+      <br />
+      <div id="sehirDetay">
+        <p>
+          <span>Plaka Kodu : <strong id="plaka_kodu"></strong></span>
+          <span>Alan Kodu : <strong id="alan_kodu"></strong></span>
+          <span>Bölge : <strong id="bolge"></strong></span>
+        </p>
+        <p>
+          <span>Nüfus : <strong id="nufus"></strong></span>
+          <span>Yüzölçümü : <strong id="yuzolcumu"></strong></span>
+          <span>Nüfus Payı : <strong id="nufus_yuzdesi_genel"></strong></span>
+        </p>
+        <p>
+          <span>Erkek Nüfüsu : <strong id="erkek_nufus"></strong></span>
+          <span
+            >Erkek Nüfusu Yüzdesi : <strong id="erkek_nufus_yuzde"></strong
+          ></span>
+        </p>
+        <p>
+          <span>Kadın Nüfüsu : <strong id="kadin_nufus"></strong></span>
+          <span
+            >Kadın Nüfusu Yüzdesi : <strong id="kadin_nufus_yuzde"></strong
+          ></span>
+        </p>
+        <p>
+          <span>Kısa Bilgi : <strong id="kisa_bilgi"></strong></span>
+        </p>
+        <p>İlçeler : <strong id="ilceler"></strong></p>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap4.min.js"></script>
+    <script src="js/turkish-string.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
